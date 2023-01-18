@@ -1,3 +1,44 @@
+/* reset */
+h1, h2, h3, h4, h5, h6, p {
+margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+/* /reset */
 /* base style */
 :root {
     /* Font */
@@ -19,18 +60,26 @@
     /* Others */
 }
 
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-    color: currentColor;
-}
-
 body {
     font-family: var(--primary-font);
     color: var(--primary-slate-txt-color);
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15;
+    padding-right: 15;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    outline: 2px solid red;
+    outline-offset: -2px;
 }
 /* ============Components============= */
 .title {
@@ -71,6 +120,10 @@ body {
 }
 .logo-part {
     color: var(--iris-brand-txt-color);
+}
+
+. {
+    display: flex;
 }
 
 .menu-link {
@@ -116,14 +169,12 @@ body {
 }
 
 .main-btn {
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white-txt-color);
     background-color: var(--iris-bcg-color);
-    cursor: pointer;
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -154,7 +205,6 @@ body {
 
 /* ==========Portfolio============= */
 .filter-btn {
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -163,7 +213,6 @@ body {
     text-align: center;
     color: var(--iris-brand-txt-color);
     background-color: var(--light-bcg-color);
-    cursor: pointer;
     display: flex;
 }
 
