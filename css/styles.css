@@ -122,11 +122,19 @@ body {
     color: var(--iris-brand-txt-color);
 }
 
-. {
+.menu {
     display: flex;
 }
 
+.menu-item + .menu-item {
+    margin-left: 40px;
+}
+
 .menu-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
