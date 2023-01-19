@@ -1,5 +1,5 @@
 /* reset */
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, p {
 margin: 0;
 }
 
@@ -72,8 +72,8 @@ body {
 
 .container {
     width: 1158px;
-    padding-left: 15;
-    padding-right: 15;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
@@ -83,6 +83,8 @@ body {
 }
 /* ============Components============= */
 .title {
+    margin-bottom: 72px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -93,6 +95,8 @@ body {
 }
 
 .subtitle {
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -109,7 +113,19 @@ body {
 /* ============/Components============= */
 
 /* ============Header============= */
+.header-container {
+    display: flex;
+    border-bottom: 1px solid var(--descr-ligh-txt-color);
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+    margin-right: 76px;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -124,11 +140,12 @@ body {
 
 .menu {
     display: flex;
+    gap: 40px;
 }
 
-.menu-item + .menu-item {
+/* .menu-item + .menu-item {
     margin-left: 40px;
-}
+} */
 
 .menu-link {
     display: block;
@@ -149,7 +166,24 @@ body {
     color: var(--accent-ocean-txt-color);
 }
 
+.contacts {
+    margin-left: auto;
+}
+
+.menu-contacts {
+    display: flex;
+    gap: 40px;
+}
+
+/* .menu-contact-item + .menu-contact-item {
+    margin-left: 40px;
+} */
+
 .contact-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -165,18 +199,26 @@ body {
 /* ============Hero============= */
 .hero {
     background-color: var(--dark-bcg-color);
+    text-align: center;
 }
 
 .main-title {
+    margin-bottom: 48px;
+
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: var(--white-txt-color);
 }
 
 .main-btn {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -190,6 +232,17 @@ body {
 }
 /* ============/Hero============= */
 
+/* =========Features section=========== */
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.feature-item {
+    flex-basis: calc((100% - 3 * 24px)/4);
+}
+
+/* =========/Features section=========== */
 /* ============Our team section============ */
 .team-section {
     background-color: var(--light-bcg-color);
@@ -230,7 +283,11 @@ body {
     color: var(--white-txt-color);
 }
 
-
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
 /* ==========/Portfolio============= */
 
 
