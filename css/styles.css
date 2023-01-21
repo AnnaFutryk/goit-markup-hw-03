@@ -127,9 +127,13 @@ body {
 /* ============/Components============= */
 
 /* ============Header============= */
+.page-header {
+    border-bottom: 1px solid var(--descr-ligh-txt-color);
+}
+
 .header-container {
     display: flex;
-    border-bottom: 1px solid var(--descr-ligh-txt-color);
+    
 }
 
 .page-nav {
@@ -332,6 +336,8 @@ body {
 .portfolio-wrapper {
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
 
     border: 1px solid var(--descr-ligh-txt-color);
     border-top: none;
@@ -340,6 +346,7 @@ body {
 .portfolio-list {
     row-gap: 48px;
 }
+
 
 /* ==========/Portfolio============= */
 
@@ -354,7 +361,7 @@ body {
 .logo-light {
     color: var(--white-txt-color);
 }
-.section-description {
+.footer-description {
     max-width: 264px;
     margin-top: 16px;
 }
